@@ -1,10 +1,10 @@
-import './TodoTemplate.scss';
+import '../scss/TodoTemplate.scss';
 
-type TodoTemplateProps = {
+export interface TodoTemplateChildProps {
     children: React.ReactNode;
 }
 
-const TodoTemplate = ( {children}: TodoTemplateProps  ) => {
+const TodoTemplate = ({children}: TodoTemplateChildProps) => {
     return (
         <div className='TodoTemplate'>
             <div className='app-title'>일정 관리</div>
